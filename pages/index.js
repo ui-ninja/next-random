@@ -17,5 +17,6 @@ export async function getStaticProps() {
     props: {
       person: res.results[0],
     },
+    revalidate: 10, // In seconds
   };
 }
